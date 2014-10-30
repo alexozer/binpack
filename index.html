@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bin Packing!</title>
+	</head>
+	<body>
+		<h1>Bin Packing!</h1>
+
+		Capacity: <input type="text" id="capacity" size="6" maxlength="8"/>
+		<p>Separate the values with commas.</p>
+		Items: </br>
+		<textarea id="items"></textarea>
+		<input type="button" value="Sort" onClick="sortItems()"/></br></br>
+		<input type="button" onClick="nextFit()" value="Next Fit"/>
+		<input type="button" onClick="firstFit()" value="First Fit"/>
+		<input type="button" onClick="bestFit()" value="Best (Worst) Fit"/>
+
+		<div id="results"></div>
+		<input type="button" id="clearButton" value="Clear" style="visibility: hidden" onClick="clearResults()"/>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>
